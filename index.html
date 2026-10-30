@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f7f8fc">
+  <meta name="description" content="Portfolio của Vũ Trung Kiên, sinh viên Công nghệ Thông tin yêu thích lập trình và xây dựng sản phẩm hữu ích.">
+  <title>Vũ Trung Kiên — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="reading-progress" aria-hidden="true"><span id="reading-progress-bar"></span></div>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="#gioi-thieu" aria-label="Vũ Trung Kiên — về đầu trang">Kien<span>.</span></a>
+      <nav aria-label="Menu chính">
+        <ul class="menu">
+          <li><a href="#gioi-thieu">Giới thiệu</a></li>
+          <li><a href="#ky-nang">Kỹ năng</a></li>
+          <li><a href="#du-an">Dự án</a></li>
+          <li><a href="#mini-lab">Mini lab</a></li>
+          <li><a href="#hoc-tap">Hành trình</a></li>
+          <li><a href="#lien-he">Liên hệ</a></li>
+        </ul>
+      </nav>
+      <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Chuyển sang chế độ tối" aria-pressed="false">☾</button>
+    </div>
+  </header>
+
+  <main>
+    <section id="gioi-thieu" class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <p class="hero-role">Sinh viên năm nhất · Công nghệ Thông tin</p>
+          <h1>Xin chào,<br>mình là <span>Kiên.</span></h1>
+          <p class="hero-copy">Mình thích viết những chương trình nhỏ giải quyết việc thật: tính điểm học phần, ghi chú bài giảng và làm website cho câu lạc bộ. Hiện tại, mình tập trung xây nền tảng C++ và tìm hiểu cách phát triển ứng dụng Flutter.</p>
+          <div class="hero-actions">
+            <a class="button" href="#du-an">Khám phá dự án <span aria-hidden="true">↗</span></a>
+            <a class="button button-secondary" href="mailto:trungkiendz2211@gmail.com">Liên hệ với mình</a>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <img class="avatar" src="assets/aaa.jpeg" alt="Ảnh đại diện vui nhộn của Kiên" width="800" height="800">
+        </div>
+      </div>
+    </section>
+
+    <section id="ky-nang" class="section">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Những gì mình đang học</p>
+          <h2>Kỹ năng</h2>
+          <p class="section-intro">Các công cụ và kỹ năng mình đang rèn luyện qua bài tập, dự án cá nhân và làm việc nhóm.</p>
+        </div>
+        <ul class="skills">
+          <li><span class="skill-mark" aria-hidden="true">C++</span>C++ cơ bản: hàm, mảng, struct</li>
+          <li><span class="skill-mark" aria-hidden="true">Py</span>Python: xử lý tệp CSV</li>
+          <li><span class="skill-mark" aria-hidden="true">&lt;/&gt;</span>HTML5 ngữ nghĩa, CSS3</li>
+          <li><span class="skill-mark" aria-hidden="true">Git</span>Git: commit, push lên GitHub</li>
+          <li><span class="skill-mark" aria-hidden="true">Fl</span>Flutter: widget cơ bản</li>
+          <li><span class="skill-mark" aria-hidden="true">✦</span>Làm việc nhóm theo Scrum</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="du-an" class="section section-alt">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Học bằng cách làm</p>
+          <h2>Dự án tiêu biểu</h2>
+          <p class="section-intro">Một vài sản phẩm mình đã thực hành trong quá trình học tập.</p>
+        </div>
+        <div class="project-toolbar">
+          <div class="project-filters" role="group" aria-label="Lọc dự án theo công nghệ">
+            <button class="filter-button is-active" type="button" data-filter="all" aria-pressed="true">Tất cả</button>
+            <button class="filter-button" type="button" data-filter="cpp" aria-pressed="false">C++</button>
+            <button class="filter-button" type="button" data-filter="flutter" aria-pressed="false">Flutter</button>
+            <button class="filter-button" type="button" data-filter="web" aria-pressed="false">Web</button>
+          </div>
+          <p id="project-count" class="project-count" aria-live="polite">3 dự án</p>
+        </div>
+        <div class="projects">
+          <article class="card" data-category="cpp">
+            <img src="assets/du-an-1.svg" alt="Minh họa chương trình tính điểm học phần bằng C++" width="300" height="180" loading="lazy">
+            <div class="card-content">
+              <p class="project-type">C++ · Ứng dụng dòng lệnh</p>
+              <h3>Chương trình tính điểm học phần</h3>
+              <p>Đọc điểm thành phần và tính điểm tổng kết theo trọng số của đề cương.</p>
+              <span class="project-note">Liên kết mã nguồn sẽ được bổ sung</span>
+            </div>
+          </article>
+          <article class="card" data-category="flutter">
+            <img src="assets/du-an-2.svg" alt="Minh họa ứng dụng ghi chú bài giảng bằng Flutter" width="300" height="180" loading="lazy">
+            <div class="card-content">
+              <p class="project-type">Flutter · Ứng dụng di động</p>
+              <h3>Ứng dụng ghi chú bài giảng</h3>
+              <p>Ghi chú theo môn học, tìm kiếm và đánh dấu nội dung cần ôn trước kỳ thi.</p>
+              <span class="project-note">Liên kết mã nguồn sẽ được bổ sung</span>
+            </div>
+          </article>
+          <article class="card" data-category="web">
+            <img src="assets/du-an-3.svg" alt="Minh họa website giới thiệu Câu lạc bộ Tin học" width="300" height="180" loading="lazy">
+            <div class="card-content">
+              <p class="project-type">HTML · CSS · Website</p>
+              <h3>Website Câu lạc bộ Tin học</h3>
+              <p>Trang giới thiệu hoạt động, lịch sinh hoạt và cách đăng ký thành viên.</p>
+              <span class="project-note">Liên kết mã nguồn sẽ được bổ sung</span>
+            </div>
+          </article>
+        </div>
+        <p class="projects-footnote">Các mini app tương tác bên dưới là demo mới, chạy trực tiếp trên portfolio.</p>
+      </div>
+    </section>
+
+    <section id="mini-lab" class="section">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Thử ngay trên trang</p>
+          <h2>Mini lab của Kiên</h2>
+          <p class="section-intro">Bốn tiện ích nhỏ mình xây dựng để luyện tư duy tính toán, xử lý thời gian và làm giao diện tương tác.</p>
+        </div>
+        <div class="lab-grid">
+          <article class="lab-card grade-tool">
+            <div class="lab-card-heading">
+              <span class="lab-icon" aria-hidden="true">01</span>
+              <div>
+                <p class="project-type">Mini app · Tính toán</p>
+                <h3>Thử tính điểm học phần</h3>
+              </div>
+            </div>
+            <p class="lab-description">Nhập điểm từ 0 đến 10 và tự điều chỉnh trọng số. Tổng trọng số cần bằng 100%.</p>
+            <form id="grade-form" class="grade-form">
+              <div class="grade-fields">
+                <label class="grade-field">
+                  <span>Điểm thường xuyên</span>
+                  <span class="grade-input-pair">
+                    <input name="score1" type="number" min="0" max="10" step="0.1" value="8" required aria-label="Điểm thường xuyên">
+                    <span class="weight-input"><input name="weight1" type="number" min="0" max="100" step="1" value="20" required aria-label="Trọng số điểm thường xuyên"></span>
+                  </span>
+                </label>
+                <label class="grade-field">
+                  <span>Điểm giữa kỳ</span>
+                  <span class="grade-input-pair">
+                    <input name="score2" type="number" min="0" max="10" step="0.1" value="7.5" required aria-label="Điểm giữa kỳ">
+                    <span class="weight-input"><input name="weight2" type="number" min="0" max="100" step="1" value="30" required aria-label="Trọng số điểm giữa kỳ"></span>
+                  </span>
+                </label>
+                <label class="grade-field">
+                  <span>Điểm cuối kỳ</span>
+                  <span class="grade-input-pair">
+                    <input name="score3" type="number" min="0" max="10" step="0.1" value="8.5" required aria-label="Điểm cuối kỳ">
+                    <span class="weight-input"><input name="weight3" type="number" min="0" max="100" step="1" value="50" required aria-label="Trọng số điểm cuối kỳ"></span>
+                  </span>
+                </label>
+              </div>
+              <p id="weight-status" class="tool-status" aria-live="polite">Tổng trọng số: 100%</p>
+              <button class="button" type="submit">Tính điểm trung bình <span aria-hidden="true">↗</span></button>
+            </form>
+            <div class="grade-result" aria-live="polite">
+              <span class="result-label">Điểm dự kiến</span>
+              <output id="grade-result" for="grade-form">8.1</output>
+              <span id="grade-message" class="result-message">Nhập điểm và trọng số để xem kết quả.</span>
+            </div>
+            <p class="demo-note">Chỉ mang tính tham khảo; hãy dùng trọng số theo đề cương môn học.</p>
+          </article>
+
+          <article class="lab-card focus-tool">
+            <div class="lab-card-heading">
+              <span class="lab-icon" aria-hidden="true">02</span>
+              <div>
+                <p class="project-type">Mini app · Tập trung</p>
+                <h3>Đồng hồ Pomodoro</h3>
+              </div>
+            </div>
+            <p class="lab-description">Chia thời gian học thành phiên tập trung ngắn và nghỉ giữa giờ.</p>
+            <div class="timer-tabs" role="group" aria-label="Chọn chế độ đồng hồ">
+              <button class="timer-tab is-active" type="button" data-minutes="25" data-mode="focus" aria-pressed="true">Tập trung</button>
+              <button class="timer-tab" type="button" data-minutes="5" data-mode="break" aria-pressed="false">Nghỉ ngắn</button>
+            </div>
+            <div class="timer-face" aria-live="off">
+              <svg class="timer-ring" viewBox="0 0 220 220" aria-hidden="true">
+                <circle class="timer-ring-track" cx="110" cy="110" r="96"></circle>
+                <circle id="timer-ring-progress" class="timer-ring-progress" cx="110" cy="110" r="96"></circle>
+              </svg>
+              <div class="timer-readout">
+                <output id="timer-display" aria-label="Thời gian còn lại">25:00</output>
+                <span id="timer-mode-label">Sẵn sàng tập trung</span>
+              </div>
+            </div>
+            <div class="timer-controls">
+              <button id="timer-toggle" class="button" type="button">Bắt đầu</button>
+              <button id="timer-reset" class="button button-secondary" type="button">Đặt lại</button>
+            </div>
+            <p id="timer-status" class="tool-status" role="status" aria-live="polite">Một phiên tập trung là 25 phút.</p>
+          </article>
+
+          <article class="lab-card planner-tool">
+            <div class="lab-card-heading">
+              <span class="lab-icon" aria-hidden="true">03</span>
+              <div>
+                <p class="project-type">Mini app · Năng suất</p>
+                <h3>Kế hoạch học tập hôm nay</h3>
+              </div>
+            </div>
+            <p class="lab-description">Thêm việc cần làm, đánh dấu tiến độ và lưu danh sách ngay trên trình duyệt này.</p>
+            <form id="task-form" class="task-form">
+              <label class="sr-only" for="task-input">Việc cần làm</label>
+              <input id="task-input" name="task" type="text" maxlength="100" placeholder="Ví dụ: Ôn lại vòng lặp trong C++" required>
+              <button class="button" type="submit" aria-label="Thêm việc cần làm">Thêm <span aria-hidden="true">+</span></button>
+            </form>
+            <div class="planner-toolbar">
+              <p id="task-summary" class="tool-status" aria-live="polite">0 việc cần làm</p>
+              <div class="task-filters" role="group" aria-label="Lọc danh sách công việc">
+                <button class="task-filter is-active" type="button" data-task-filter="all" aria-pressed="true">Tất cả</button>
+                <button class="task-filter" type="button" data-task-filter="active" aria-pressed="false">Cần làm</button>
+                <button class="task-filter" type="button" data-task-filter="completed" aria-pressed="false">Hoàn thành</button>
+              </div>
+            </div>
+            <ul id="task-list" class="task-list" aria-label="Danh sách việc cần làm"></ul>
+            <div class="planner-footer">
+              <span id="task-progress-label">Tiến độ 0%</span>
+              <div class="task-progress-track" role="progressbar" aria-label="Tiến độ hoàn thành" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+                <span id="task-progress-bar"></span>
+              </div>
+              <button id="clear-completed" class="clear-tasks" type="button" disabled>Xóa việc đã xong</button>
+            </div>
+            <p id="task-status" class="sr-only" role="status" aria-live="polite"></p>
+            <p class="demo-note">Danh sách được lưu cục bộ trên trình duyệt, không gửi lên máy chủ.</p>
+          </article>
+
+          <article class="lab-card quiz-tool">
+            <div class="lab-card-heading">
+              <span class="lab-icon" aria-hidden="true">04</span>
+              <div>
+                <p class="project-type">Mini app · Ôn tập</p>
+                <h3>Thử thách kiến thức C++</h3>
+              </div>
+            </div>
+            <p class="lab-description">Năm câu hỏi ngắn về cú pháp và khái niệm lập trình cơ bản. Chọn đáp án để xem giải thích.</p>
+            <div class="quiz-progress">
+              <span id="quiz-step-label">Câu 1/5</span>
+              <span id="quiz-score-label">Điểm: 0</span>
+            </div>
+            <div class="quiz-progress-track" role="progressbar" aria-label="Tiến độ câu hỏi" aria-valuemin="0" aria-valuemax="5" aria-valuenow="1">
+              <span id="quiz-progress-bar"></span>
+            </div>
+            <h4 id="quiz-question" class="quiz-question"></h4>
+            <div id="quiz-options" class="quiz-options" role="group" aria-labelledby="quiz-question"></div>
+            <p id="quiz-feedback" class="quiz-feedback" aria-live="polite">Chọn một đáp án để xem kết quả.</p>
+            <div class="quiz-actions">
+              <button id="quiz-next" class="button" type="button" disabled>Câu tiếp theo <span aria-hidden="true">→</span></button>
+              <button id="quiz-restart" class="button button-secondary" type="button" hidden>Chơi lại</button>
+            </div>
+            <p class="demo-note">Đây là bộ câu hỏi ôn tập nhỏ, không phải bài kiểm tra hay chứng chỉ.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="hoc-tap" class="section">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Hành trình học tập</p>
+          <h2>Từng bước một</h2>
+          <p class="section-intro">Những cột mốc gắn với môn học và sản phẩm mình đã chia sẻ trong portfolio.</p>
+        </div>
+        <ol class="learning-timeline">
+          <li class="timeline-item">
+            <span class="timeline-marker" aria-hidden="true">01</span>
+            <div class="timeline-content">
+              <p class="timeline-label">Học kỳ 1 · Nền tảng</p>
+              <h3>Nhập môn lập trình với C++</h3>
+              <p>Luyện hàm, mảng và struct qua chương trình tính điểm học phần.</p>
+              <span class="timeline-tag">Đã thực hành</span>
+            </div>
+          </li>
+          <li class="timeline-item">
+            <span class="timeline-marker" aria-hidden="true">02</span>
+            <div class="timeline-content">
+              <p class="timeline-label">Học kỳ 2 · Thiết kế web</p>
+              <h3>Đưa portfolio lên trình duyệt</h3>
+              <p>Thực hành HTML ngữ nghĩa, CSS responsive và JavaScript tương tác.</p>
+              <span class="timeline-tag">Đang hoàn thiện</span>
+            </div>
+          </li>
+          <li class="timeline-item timeline-next">
+            <span class="timeline-marker" aria-hidden="true">03</span>
+            <div class="timeline-content">
+              <p class="timeline-label">Mục tiêu tiếp theo</p>
+              <h3>Tiếp tục củng cố C++ và tìm hiểu Flutter</h3>
+              <p>Mình muốn biến những bài tập nhỏ thành công cụ hữu ích, dễ dùng trên điện thoại.</p>
+              <span class="timeline-tag">Đang hướng tới</span>
+            </div>
+          </li>
+        </ol>
+        <div class="table-responsive">
+          <table class="study">
+            <thead>
+              <tr>
+                <th scope="col">Học kỳ</th>
+                <th scope="col">Học phần tiêu biểu</th>
+                <th scope="col">Sản phẩm thực hành</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>HK1</td>
+                <td>Nhập môn lập trình (C++)</td>
+                <td>Chương trình tính điểm</td>
+              </tr>
+              <tr>
+                <td>HK2</td>
+                <td>Thiết kế web (FIT4014)</td>
+                <td>Portfolio cá nhân</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section id="lien-he" class="section section-alt">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Kết nối nhé</p>
+          <h2>Liên hệ</h2>
+        </div>
+        <div class="contact-panel">
+          <div class="contact-intro">
+            <p class="eyebrow">Mình đang mở lòng với cơ hội mới</p>
+            <h3>Bạn có dự án thú vị?</h3>
+            <p>Mình luôn sẵn sàng học hỏi, hợp tác và kết nối. Gửi lời nhắn cho mình nhé.</p>
+            <div class="contact-links">
+              <a class="button button-secondary" href="https://github.com/TrungKyenn" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+              <button class="button button-secondary copy-email" type="button" data-email="trungkiendz2211@gmail.com">Sao chép email</button>
+              <p id="copy-status" class="copy-status" role="status" aria-live="polite"></p>
+            </div>
+          </div>
+          <form id="contact-form" class="contact-form">
+            <div class="form-row">
+              <div class="form-field">
+                <label for="contact-name">Tên của bạn</label>
+                <input id="contact-name" name="name" type="text" autocomplete="name" placeholder="Nguyễn Văn A" maxlength="80" required>
+              </div>
+              <div class="form-field">
+                <label for="contact-email">Email của bạn</label>
+                <input id="contact-email" name="email" type="email" autocomplete="email" placeholder="ban@email.com" maxlength="120" required>
+              </div>
+            </div>
+            <div class="form-field">
+              <label for="contact-subject">Bạn muốn trao đổi về</label>
+              <select id="contact-subject" name="subject" required>
+                <option value="" selected disabled>Chọn một chủ đề</option>
+                <option value="Cơ hội hợp tác">Cơ hội hợp tác</option>
+                <option value="Dự án / sản phẩm">Dự án / sản phẩm</option>
+                <option value="Học tập và chia sẻ">Học tập và chia sẻ</option>
+                <option value="Khác">Khác</option>
+              </select>
+            </div>
+            <div class="form-field">
+              <label for="contact-message">Lời nhắn</label>
+              <textarea id="contact-message" name="message" rows="5" minlength="10" maxlength="1000" placeholder="Viết vài dòng để mình hiểu bạn cần gì nhé..." required></textarea>
+              <span class="character-count"><span id="message-count">0</span>/1000 ký tự</span>
+            </div>
+            <button class="button form-submit" type="submit">Soạn email cho Kiên <span aria-hidden="true">↗</span></button>
+            <p id="form-status" class="form-status" role="status" aria-live="polite">Biểu mẫu sẽ mở ứng dụng email của bạn để gửi lời nhắn.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>Vũ Trung Kiên · Portfolio cá nhân</p>
+      <a href="#gioi-thieu">Về đầu trang ↑</a>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
